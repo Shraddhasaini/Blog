@@ -9,7 +9,7 @@
         - POSTGRES_PASSWORD=postgres
     web:
       build: .
-      command: python manage.py migrate
+      command: python manage.py createsuperuser
 
       volumes:
         - .:/code
