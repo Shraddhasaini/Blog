@@ -9,7 +9,8 @@
         - POSTGRES_PASSWORD=postgres
     web:
       build: .
-      command: python manage.py makemigrations blog
+      command: python manage.py sqlmigrate blog 0001
+
       volumes:
         - .:/code
       ports:
