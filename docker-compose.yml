@@ -9,7 +9,7 @@
         - POSTGRES_PASSWORD=postgres
     web:
       build: .
-      command: docker exce -it Dockerbased_web_1 sh
+      command: python manage.py runserver 0.0.0.0:8000
       volumes:
         - .:/code
       ports:
