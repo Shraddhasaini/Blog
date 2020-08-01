@@ -1,2 +1,2 @@
 # Blog
-A basic bloging web based app on Django
+A basic bloging web based app on Django framework
